@@ -1,0 +1,26 @@
+<div class="modal-dialog modal-lg">
+    <div class="modal-content" style="width: 500px; margin: 0px auto;">
+        <div class="modal-header">
+            <h4 class="modal-title">
+            </h4>
+        </div>
+        <div class="modal-body">
+            <div class="dialogBody">
+                <div class="row customerRow">
+                    <div class="col-xs-4">
+                        <i class="fa fa-warning fa-4x" style="color: orange"></i>
+                    </div>
+                    <div class="col-xs-8">
+                        {{'message.session_timeout' | translate}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-info"
+                    ng-click="sessionTimeout();">
+                {{'button.accept' | translate}}
+            </button>
+        </div>
+    </div>
+</div>

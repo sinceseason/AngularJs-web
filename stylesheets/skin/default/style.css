@@ -1,0 +1,239 @@
+@charset "UTF-8";
+html, body {
+  /*设置html和body的width和height为100%，可使全屏生效*/
+  height: 100%;
+  width: 100%;
+  /*设置上下左右的相对位置为0，可避免超出范围出现滚动条*/
+  margin: 0;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  font-family: "Microsoft YaHei";
+}
+
+.loginComponent {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.loginComponent .bg {
+  position: fixed;
+  top: 50%;
+  margin-top: -320px;
+  width: 100%;
+  height: 640px;
+}
+.loginComponent .bg .top-content {
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+}
+.loginComponent .bg .top-content .line {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  border-bottom: 2px solid #195AAE;
+}
+.loginComponent .bg .top-content .title {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 31px;
+  float: left;
+  bottom: -5px;
+  width: auto;
+  height: 78px;
+  margin-left: 20%;
+  font-family: "Microsoft YaHei";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 78px;
+  color: #195AAE;
+  text-align: center;
+}
+.loginComponent .bg .bottom-content {
+  background-color: #0071c5;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 550px;
+}
+.loginComponent .bg .bottom-content .bottom-bg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  height: 550px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .bottom-banner {
+  float: left;
+  width: 855px;
+  height: 100%;
+}
+.loginComponent .bg .bottom-content .bottom-bg .bottom-banner img {
+  width: 100%;
+  height: 100%;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login {
+  position: relative;
+  top: 50%;
+  margin-top: -207px;
+  float: right;
+  background-color: #ffffff;
+  text-align: center;
+  width: 330px;
+  height: 428px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form {
+  position: relative;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 86%;
+  height: 380px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-content {
+  text-align: center;
+  width: 100%;
+  height: 32px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-content .login-title {
+  width: auto;
+  height: 22px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 22px;
+  line-height: 22px;
+  color: #0071c5;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-content .login-subheading {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+  width: auto;
+  height: 18px;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  line-height: 18px;
+  color: #c3c5c6;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-name {
+  position: relative;
+  top: 15px;
+  border: 2px solid #bac7d2;
+  width: 100%;
+  height: 46px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-name div {
+  color: #bac7d2;
+  font-size: 22px;
+  float: left;
+  line-height: 46px;
+  width: 42px;
+  height: 46px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-name input {
+  border: 0;
+  width: 237px;
+  height: 100%;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  line-height: 14px;
+  color: #bac7d2;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-password {
+  position: relative;
+  top: 40px;
+  border: 2px solid #bac7d2;
+  width: 100%;
+  height: 46px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-password div {
+  color: #bac7d2;
+  font-size: 22px;
+  float: left;
+  line-height: 46px;
+  width: 42px;
+  height: 46px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-password input {
+  border: 0;
+  width: 237px;
+  height: 100%;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  line-height: 14px;
+  color: #bac7d2;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-rememberpwd {
+  position: relative;
+  top: 35px;
+  vertical-align: middle;
+  width: 100%;
+  height: 40px;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  line-height: 48px;
+  color: #c3c5c6;
+  text-align: right;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-rememberpwd input {
+  margin: 0;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-button {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 48px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .login-button a {
+  display: block;
+  background-color: #4c88f1;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  font-size: 22px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .link {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  font-size: 15px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .link a:hover {
+  cursor: pointer;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .link div:first-child {
+  float: left;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .link div:last-child {
+  float: right;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .version {
+  position: relative;
+  top: 95px;
+  width: 100%;
+  height: 12px;
+}
+.loginComponent .bg .bottom-content .bottom-bg .login .login-form .version div {
+  width: 100%;
+  text-align: right;
+  float: right;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  line-height: 12px;
+  color: #c3c5c6;
+}
+@media (max-width: 1280px) {
+  .loginComponent .bg .bottom-content .bottom-bg .login {
+    right: 100px;
+  }
+}

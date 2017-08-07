@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=10">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--css-->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./bower_components/AngularJS-Toaster/toaster.min.css" rel="stylesheet"/>
+    <link href="./bower_components/angularjs-slider/dist/rzslider.min.css" rel="stylesheet" />
+    <link href="./bower_components/angular-tree-control/css/tree-control.css" rel="stylesheet"/>
+    <link href="./lib/angular-ui-grid/ui-grid.css" rel="stylesheet"/>
+    <link href="./lib/jquery-treeview/jquery.treeview.css" rel="stylesheet"/>
+    <link href="./lib/jedate/skin/jedate.css" rel="stylesheet"/>
+    <link href="./stylesheets/screen.css" rel="stylesheet"/>
+
+    <link href="./stylesheets/skin/default/style.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="./compress/images/icon/favicon.png"/>
+</head>
+<body id="rootBody" ng-controller="RootController">
+
+    <div ui-view></div>
+    <div class="modal fade bs-example-modal-lg" id="rootDialog" tabindex="-1" role="dialog"
+         aria-labelledby="monitorDialogLabel" aria-hidden="true" data-backdrop="static">
+        <div ng-include="rootDialogPage"></div>
+    </div>
+
+    <!--toaster && spinner-->
+    <toaster-container toaster-options="{{tosterOption.opAction}}"></toaster-container>
+    <toaster-container toaster-options="{{tosterOption.warning}}"></toaster-container>
+    <span spinner-key="spinner" us-spinner="{radius:30, width:8, length: 16}"></span>
+
+    <!--jquery-->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <!--data-main入口-->
+    <script id="main" data-baseurl="./" data-main="app/main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

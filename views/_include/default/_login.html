@@ -1,0 +1,54 @@
+<div class="loginComponent">
+    <div class="bg">
+        <div class="top-content">
+            <div class="line"></div>
+            <div class="title" onselect="return false">{{'label.title' | translate}}</div>
+        </div>
+        <div class="bottom-content">
+            <div class="bottom-bg">
+                <div class="bottom-banner">
+                    <img src="./compress/images/login/default/default_banner.png"/>
+                </div>
+                <div class="login">
+                    <div class="login-form">
+                        <div class="login-content">
+                            <div class="login-title">{{'label.login_title' | translate}}</div>
+                        </div>
+                        <div class="login-name">
+                            <div>
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <input id="inUsername"
+                                   type="text"
+                                   placeholder="{{'label.user_name' | translate}}"
+                                   ng-model="reqUser.username"/>
+                        </div>
+                        <div class="login-password">
+                            <div>
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <input id="inPassword"
+                                   type="password"
+                                   placeholder="{{'label.user_password' | translate}}"
+                                   ng-model="reqUser.password"/>
+                        </div>
+                        <div class="login-rememberpwd">
+                            <input type="checkbox" ng-model="cacheAccount.cached"/>  {{'label.remember_account' | translate}}
+                        </div>
+                        <div class="login-button">
+                            <a ng-click="login()">{{'label.login' | translate}}</a>
+                        </div>
+                        <div class="link">
+                            <div>
+                                <a ng-click="">{{'label.choose_lang' | translate}}</a>
+                            </div>
+                        </div>
+                        <div class="version">
+                            <div>Ver {{version}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

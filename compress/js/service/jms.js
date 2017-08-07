@@ -1,0 +1,1 @@
+define(function(require){"use strict";var t=function(t){this.$rootScope=t};return t.$inject=["$rootScope"],t.prototype.init=function(t,i,n){i(Stomp.client(t))},function(i){i.config(["$provide",function(i){i.service("jmsService",t)}])}});

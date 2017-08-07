@@ -1,0 +1,241 @@
+@import "compass/css3";
+
+.loginComponent{
+  background-color: $login_loginComponent_background_color;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  .bg{
+    position: fixed;
+    top: 50%;
+    margin-top: -320px;
+    width: 100%;
+    height: 640px;
+    .top-content{
+      bottom:0;
+      width: 100%;
+      height: 90px;
+
+      .line {
+        position: relative;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        border-bottom: 2px solid $login_line_color;
+      }
+
+      .title {
+        position: relative;
+        background-color: $login_title_background_color;
+        padding: 0 31px;
+        float: left;
+        bottom: -5px;
+        width: auto;
+        height: 78px;
+        margin-left: 20%;
+        font-family: $system_font_family_1;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 78px;
+        color: $login_title_div_color;
+        text-align: center;
+      }
+    }
+    .bottom-content{
+      background-color: $login_bottom_content_background_color;
+      text-align: center;
+      margin:0 auto;
+      width: 100%;
+      height: 550px;
+
+      .bottom-bg{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1300px;
+        height: 550px;
+
+        .bottom-banner{
+          float: left;
+          width: 855px;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .login{
+          position: relative;
+          top: 50%;
+          margin-top: -207px;
+          float: right;
+          background-color: $login_login_background_color;
+          text-align: center;
+          width: 330px;
+          height: 428px;
+
+          .login-form{
+            position: relative;
+            top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 86%;
+            height: 380px;
+
+            .login-content{
+              text-align: center;
+              width: 100%;
+              height: 32px;
+
+              .login-title{
+                width: auto;
+                height: 22px;
+                text-align: center;
+                font-family: $system_font_family_1;
+                font-size: 22px;
+                line-height: 22px;
+                color: $login_login_login_title;
+              }
+              .login-subheading{
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                top:5px;
+                width: auto;
+                height: 18px;
+                font-family: $system_font_family_1;
+                font-size: 18px;
+                line-height: 18px;
+                color: $login_login_subheading;
+              }
+            }
+            .login-name{
+              position: relative;
+              top: 15px;
+              border: 2px solid $login_login_form_border_color;
+              width: 100%;
+              height: 46px;
+
+              div{
+                color:$login_login_form_border_color;
+                font-size: 22px;
+                float: left;
+                line-height: 46px;
+                width: 42px;
+                height: 46px;
+              }
+              input{
+                border: 0;
+                width: 237px;
+                height: 100%;
+                font-family: $system_font_family_1;
+                font-size: 14px;
+                line-height: 14px;
+                color: $login_login_form_border_color;
+              }
+            }
+            .login-password{
+              position: relative;
+              top: 40px;
+              border: 2px solid $login_login_form_border_color;
+              width: 100%;
+              height: 46px;
+
+              div{
+                color:$login_login_form_border_color;
+                font-size: 22px;
+                float: left;
+                line-height: 46px;
+                width: 42px;
+                height: 46px;
+              }
+              input{
+                border: 0;
+                width: 237px;
+                height: 100%;
+                font-family: $system_font_family_1;
+                font-size: 14px;
+                line-height: 14px;
+                color: $login_login_form_border_color;
+              }
+            }
+            .login-rememberpwd{
+              position: relative;
+              top: 35px;
+              vertical-align: middle;
+              width: 100%;
+              height: 40px;
+              font-family: $system_font_family_1;
+              font-size: 12px;
+              line-height: 48px;
+              color: $login_login_rememberpwd_color;
+              text-align: right;
+
+              input{
+                margin: 0;
+              }
+            }
+            .login-button{
+              position: relative;
+              top: 40px;
+              width: 100%;
+              height: 48px;
+
+              a{
+                display:block;
+                background-color: $login_login_button_background_color;
+                cursor:pointer;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                line-height: 48px;
+                font-size: 22px;
+                font-family: $system_font_family_1;
+                color: $login_login_button_color;
+              }
+            }
+            .link{
+              position: relative;
+              top: 65px;
+              width: 100%;
+              font-size: 15px;
+
+              a:hover{
+                cursor: pointer;
+              }
+
+              div:first-child{
+                float: left;
+              }
+              div:last-child{
+                float: right;
+              }
+            }
+            .version{
+              position: relative;
+              top: 95px;
+              width: 100%;
+              height: 12px;
+
+              div{
+                width: 100%;
+                text-align: right;
+                float: right;
+                font-family: $system_font_family_1;
+                font-size: 12px;
+                line-height: 12px;
+                color: $login_login_version_color;
+              }
+            }
+          }
+        }
+        @media (max-width: 1280px) {
+          .login{
+            right: 100px;
+          }
+        }
+      }
+    }
+  }
+}

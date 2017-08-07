@@ -1,0 +1,27 @@
+{
+  "name": "RFID",
+  "file": "xty_lib",
+  "version": "1.0.0",
+  "description": "xty_lib",
+  "license": "Shadow",
+  "keywords": [
+    "gulp",
+    "browser",
+    "html",
+    "css"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.15",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-imagemin": "^3.3.0"
+  },
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "express": "3.x"
+  }
+}

@@ -1,0 +1,15 @@
+@import "compass/css3";
+@import "definition";
+
+html, body {
+    /*设置html和body的width和height为100%，可使全屏生效*/
+    height: 100%;
+    width: 100%;
+    /*设置上下左右的相对位置为0，可避免超出范围出现滚动条*/
+    margin: 0;
+    @include user-select(none);
+    cursor: default;
+    font-family: $system_font_family_1;
+}
+
+@import "login";
