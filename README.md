@@ -1,2 +1,5 @@
 # AngularJs-web
-a web project build by angular 1
+A web project build by angular 1
+Use gulp to zip file
+Use require to manage package
+Use bower/npn to install package
